@@ -1,0 +1,20 @@
+.work-details {
+  margin-top: 2.5rem;
+}
+ .work-link {
+   color: $secondary;
+   text-decoration: underline;
+   font-weight: 600;
+   &:hover {
+     color: $secondary;
+     text-decoration: underline;
+   }
+ }
+
+ .icon-small {
+   font-size: .85rem;
+ }
+
+ [class*="col-"]{
+   margin-bottom: 1rem;
+ }
