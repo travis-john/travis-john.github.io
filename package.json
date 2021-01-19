@@ -1,36 +1,43 @@
 {
-  "name": "travis-john.github.io",
+  "name": "portfolio-redesign",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "bundle-js": "^1.0.3",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.0",
-    "react-codepen-embed": "^1.0.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "availity-reactstrap-validation": "^2.7.0",
+    "axios": "^0.21.1",
+    "bootstrap": "4.4.1",
+    "classnames": "^2.2.6",
+    "clean-css-cli": "^4.3.0",
+    "cssmin": "^0.4.3",
+    "emailjs-com": "^2.6.4",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-codepen-embed": "^1.0.2",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-scroll": "^1.8.1",
+    "react-svg": "^11.2.2",
+    "reactstrap": "^8.8.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "scss": "node-sass -o public/assets/css src/scss/styles.scss",
-    "concat:js": "concat -o src/js/main.js src/js/a11y.js src/js/contactMe.js src/js/jqBootstrapValidation.js src/js/smoothScroll.js",
-    "cssmin": "cleancss -o public/assets/css/styles.min.css public/assets/css/styles.css",
-    "uglify": "uglifyjs -o public/assets/js/main.min.js src/js/main.js",
-    "create:css": "npm run scss && npm run cssmin",
-    "create:js": "npm run concat:js && npm run uglify",
-    "watch:css": "onchange 'src/scss/*.scss' -- npm run create:css",
-    "watch:js": "onchange 'src/js/*.js' -- npm run create:js",
-    "watch": "npm run watch:js && watch:css",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p create:css create:js start-js",
+    "scss": "node-sass -o src/css node_modules/bootstrap/scss/bootstrap.scss",
+    "cssmin": "npm run scss && cleancss -o src/css/bootstrap.min.css src/css/bootstrap.css",
+    "start": "npm run cssmin && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,14 +54,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "bootstrap": "^4.4.1",
-    "clean-css-cli": "^4.3.0",
-    "concat": "^1.0.3",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^6.1.0",
-    "uglify-js": "^3.8.0"
-  },
-  "homepage": "http://travis-john.github.io/"
+  "homepage": "http://www.travisjohnmedia.com"
 }

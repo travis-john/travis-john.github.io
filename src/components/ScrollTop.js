@@ -1,13 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-scroll";
 
-const ScrollTop = () => {
-  return (
-    <div className="scroll-to-top position-fixed ">
-      <a className="js-scroll-trigger d-block text-center rounded" href="#page-top">
-        <i className="fa fa-chevron-up"></i>
-      </a>
-    </div>
-  )
+class ScrollTop extends Component {
+  
 }
-
-export default ScrollTop;

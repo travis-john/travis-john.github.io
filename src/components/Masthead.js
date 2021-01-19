@@ -1,69 +1,68 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {Container, Row, Col, Button, Card, CardTitle, CardBody, CardText} from 'reactstrap';
+import {ReactSVG} from 'react-svg';
+import SVG from '../svg/feeling-proud.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodepen, faDribbble, faGithub, faLinkedin, }from '@fortawesome/free-brands-svg-icons'
+import { faDownload  } from '@fortawesome/free-solid-svg-icons';
 
-class Masthead extends Component {
-  render(){
+const Masthead = (props) => {
     return (
-      <section className="masthead bg-tertiary bg-tertiary--masthead text-center">
-        <div className="container d-flex align-items-center flex-column">
-
-          {/* Masthead Avatar Image */}
-          <figure>
-            <img className="masthead-avatar mb-5" src="assets/images/profile.png" alt="profile" />
-          </figure>
-
-          {/* Masthead Heading */}
-          <h1 className="masthead-heading text-uppercase mb-0">Travis John</h1>
-
-          {/* Icon Divider */}
-          <div className="divider-custom">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon">
-              <i className="fas fa-star"></i>
-            </div>
-            <div className="divider-custom-line"></div>
-          </div>
-
-          {/* Masthead Subheading */}
-          <h2 className="font-weight-light name-h2">Front End Developer & UX/UI Designer</h2>
-          <ul className="list-inline mb-0">
-            <li className="list-inline-item">
-              <a className="btn btn-outline-dark btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://www.codepen.io/travis_john"><span className="sr-only"> link to codepen profile opens in new tab </span>
-                <i className="fab fa-fw fa-codepen"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-outline-dark btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/travis_john"><span className="sr-only">link to dribbble profile opens in new tab </span>
-                <i className="fab fa-fw fa-dribbble"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-outline-dark btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://github.com/travis-john"><span className="sr-only">link to github opens in new tab </span>
-                <i className="fab fa-fw fa-github"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-outline-dark btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/travis-john-2377962a/"><span className="sr-only">link to linkedin profile opens in new tab </span>
-                <i className="fab fa-fw fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="btn btn-outline-dark btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/travisjohnmedia"><span className="sr-only">link to twitter profile opens in new tab </span>
-                <i className="fab fa-fw fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div className="text-center mt-4">
-            <a className="btn btn-xl btn-outline-dark" href="/assets/resume/travis-john-resume.pdf">
-              <i className="fas fa-download mr-2"></i>
-              Download Resume
+      <Container className='p-3'>
+      <Row className='mb-3 mb-xs-2'>
+      <Col className='d-flex flex-column flex-wrap justify-content-center' xs={{order: 2}} sm={{size: 12, order: 2}} md={{size: 4, order: 1}}>
+        <h1>Hello!</h1>
+        <p className='lead'>I'm Travis - a Front-end Developer & UX/UI Designer</p>
+        <ul className='list-inline mb-0'>
+          <li className='list-inline-item mb-2'>
+            <a className='btn btn-outline-primary text-center rounded-circle' href='https://codepen.io/travis_john'>
+              <FontAwesomeIcon className='fab' icon={faCodepen} />
             </a>
-          </div>
-
-        </div>
-      </section>
+          </li>
+          <li className='list-inline-item mb-2'>
+            <a className='btn btn-outline-primary text-center rounded-circle' href='https://dribbble.com/travis_john'>
+              <FontAwesomeIcon className='fab' icon={faDribbble} />
+            </a>
+          </li>
+          <li className='list-inline-item mb-2'>
+            <a className='btn btn-outline-primary text-center rounded-circle' href='https://github.com/travis-john'>
+              <FontAwesomeIcon className='fab' icon={faGithub} />
+            </a>
+          </li>
+          <li className='list-inline-item mb-2'>
+            <a className='btn btn-outline-primary text-center rounded-circle' href='https://www.linkedin.com/in/travis-john-2377962a/'>
+              <FontAwesomeIcon className='fab' icon={faLinkedin} />
+            </a>
+          </li>
+        </ul>
+        <a className='btn btn-primary btn-lg text-white' href='/assets/resume/travis-john-resume-2021-web.pdf' target='_blank'><FontAwesomeIcon className='fa mr-2' icon={faDownload} />Download résumé</a>
+      </Col>
+      <Col xs={{order: 1}} sm={{size: 12, order: 1 }} md={{size: 8, order: 2}}>
+        <ReactSVG src={SVG}  beforeInjection={svg => {svg.setAttribute('style', 'width: 100%')}} />
+      </Col>
+      </Row>
+      <Row className='mt-sm-5 mt-md-n5'>
+          <Col sm={{ size: 12, offset: 0 }} md={{ size: 4, offset: 2 }}>
+            <Card inverse color="primary" className='mb-3 rounded-2'>
+              <CardBody>
+                <CardTitle>Design Projects</CardTitle>
+                <CardText>I have 3+ years as a professional UX/UI Designer. Click the link below to view design projects</CardText>
+                <Button outline color='white' block href='/design'>View design projects</Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col  sm={{ size: 12, offset: 0 }} md={{ size: 4}}>
+            <Card inverse color="primary" className='mb-3 rounded-2'>
+              <CardBody>
+                <CardTitle>Development Projects</CardTitle>
+                <CardText>I am a recent graduate of the UNC Coding Bootcamp. Click the link below to view development projects</CardText>
+                <Button outline color='white' block href='/development'>View development projects</Button>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     )
-  }
 }
 
 export default Masthead;

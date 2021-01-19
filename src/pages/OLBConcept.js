@@ -1,48 +1,24 @@
-import React, {Component} from 'react';
-import { Link } from "react-router-dom";
-import Container from '../components/Container';
-import Col from '../components/Col';
-import Row from '../components/Row';
+import React from 'react';
+import SecondaryNav from '../components/SecondaryNav';
+import CaseStudy from '../components/CaseStudy';
+import Footer from '../components/Footer';
 
-class OLBConcept extends Component {
-  render(){
-    return (
-      <header className="masthead bg-tertiary text-center">
-        <Container>
-          <h1 className="page-section-heading text-center text-uppercase text-secondary mb-0">Online Banking Concept</h1>
-          <div className="divider-custom">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon">
-              <i className="fas fa-star"></i>
-            </div>
-            <div className="divider-custom-line"></div>
-          </div>
-          <Row>
-            <Col size='sm-12'>
-              <img className='img-fluid' src='../../assets/images/design/olb-concept-card.png' />
-            </Col>
-            <Col size='sm-12'>
-              <div className='work-details'>
-              <ul class="list-inline item-details">
-                  <li class="list-inline-item">Platform:&nbsp;
-                      <strong><Link class="work-link" to="https://www.sketch.com/" target="_blank">Sketch </Link><span class="sr-only">opens in new tab </span><i className=" icon-small fas fa-external-link-alt" aria-hidden="true"></i>
-                      </strong>
-                  </li>
-                  <li class="list-inline-item">Date:
-                      <strong> Jul 2019
-                      </strong>
-                  </li>
-              </ul>
-              </div>
-            </Col>
-            <Col size='sm-12'>
-              <p>A redesigned Online Banking page concept for bbt.com. The Online Banking page was responsible for a large portion of traffic to the site, so it was decided that this page would have a unique page layout outside of our hierarchical standards. I used and redesigned existing components as well a new showcase component for this page. Due to the merger between BB&amp;T and Suntrust, this project never went beyond the design phase.</p>
-            </Col>
-          </Row>
-        </Container>
-      </header>
-    )
-  }
+const OlbConcept = () => {
+  return (
+    <>
+    <SecondaryNav />
+    <CaseStudy
+    headline = 'Online Banking Concept'
+    lead = 'Layout concept for an updated Online Banking page for bbt.com'
+    users = 'Current or prospective BBT customers who did not log in to the Online Banking portal through the homepage'
+    role = "I was asked to design a new layout for Online Banking on bbt.com for testing purposes. I used bbt's then-current page hierarchy and identified which components could be added or modified to emphasize BBT's Online Banking features. I, then, created the visual assets to create a page that could be tested."
+    process = "I started with by shortening the Hero image in order to move all other content higher up on the screen in order to incourage scrolling. I, then, imagined an entirely new component that could highlight BBT's technology and emphasizing the seamless transition from desktop portal to the mobile application. All content below the second full-width image were not changed and followed the standard page template."
+    img = '/assets/images/design/olb-concept-full.jpg'
+    alt = 'screenshot of concept layout for Online Banking page'
+    />
+    <Footer />
+    </>
+  )
 }
 
-export default OLBConcept;
+export default OlbConcept;

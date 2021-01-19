@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import MainNav from '../components/MainNav';
 import Masthead from '../components/Masthead';
 import Showcase from '../components/Showcase';
-import ContactForm from '../components/ContactForm';
-import MainJS from '../components/MainJS';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
-class Home extends Component {
-  render(){
-    return (
-      <>
-      <Masthead />
-      <Showcase />
-      <ContactForm />
-      <MainJS />
-      </>
-    )
-  }
+const Home = () => {
+
+  return(
+    <>
+    <MainNav />
+    <Masthead />
+    <Showcase />
+    <Contact />
+    <Footer />
+    </>
+  )
 }
 
 export default Home;
