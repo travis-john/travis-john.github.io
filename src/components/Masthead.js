@@ -12,7 +12,7 @@ const Masthead = (props) => {
       <Row className='mb-3 mb-xs-2'>
       <Col className='d-flex flex-column flex-wrap justify-content-center' xs={{order: 2}} sm={{size: 12, order: 2}} md={{size: 4, order: 1}}>
         <h1>Hello!</h1>
-        <p className='lead'>I'm Travis - a Front-end Developer & UX/UI Designer</p>
+        <p className='lead'>I'm Travis - A UX/UI Designer who codes!</p>
         <ul className='list-inline mb-0'>
           <li className='list-inline-item mb-2'>
             <a className='btn btn-outline-primary text-center rounded-circle' href='https://codepen.io/travis_john'>
