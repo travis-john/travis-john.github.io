@@ -40,7 +40,7 @@ const PortfolioItem = (props)=> {
           <img className='img-fluid' src={props.image} alt={props.alt} />
           <div className='overlay'>
             <h2>{props.title}</h2>
-            <a class='info' href={props.url}>Learn More <FontAwesomeIcon classname='fas' icon={props.icon} /><span class='sr-only'>{props.sr}</span></a>
+            <a class='info' target={props.target} href={props.url}>Learn More <FontAwesomeIcon classname='fas' icon={props.icon} /><span class='sr-only'>{props.sr}</span></a>
           </div>
         </div>
       </div>

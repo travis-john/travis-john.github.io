@@ -27,7 +27,9 @@ const Design = (props) => {
           alt='cropped screenshot of Frontier landing page mock'
           title='Landing Page Mock'
           url='https://dribbble.com/shots/7072069-Landing-Page-UI'
-          icon={faExternalLinkAlt} />
+          target='_blank'
+          icon={faExternalLinkAlt}
+          sr='opens in new tab' />
           <PortfolioItem
           md='4'
           sm='12'
@@ -35,7 +37,9 @@ const Design = (props) => {
           alt='cropped screenshot of compass app skin'
           title='Compass App Skin'
           url='https://dribbble.com/shots/6120425-Compass-App-Skin'
-          icon={faExternalLinkAlt} />
+          target='_blank'
+          icon={faExternalLinkAlt}
+          sr='opens in new tab' />
           <PortfolioItem
           md='4'
           sm='12'
@@ -43,7 +47,9 @@ const Design = (props) => {
           alt='cropped screenshot of product card concept'
           title='Product Card'
           url='https://dribbble.com/shots/6475784-Product-Card-UI'
-          icon={faExternalLinkAlt} />
+          target='_blank'
+          icon={faExternalLinkAlt}
+          sr='opens in new tab' />
           <PortfolioItem
           md='12'
           sm='12'
