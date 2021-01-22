@@ -36,9 +36,8 @@
     "scss": "node-sass -o src/css node_modules/bootstrap/scss/bootstrap.scss",
     "cssmin": "npm run scss && cleancss -o src/css/bootstrap.min.css src/css/bootstrap.css",
     "start": "npm run cssmin && react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -57,5 +56,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://travis-john.github.io"
+  "homepage": "https://travis-john.github.io",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }

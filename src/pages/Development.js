@@ -65,7 +65,7 @@ const Development = (props) => {
           sm='12'
           image='/assets/images/development/zdog-uswnt.png'
           alt='the USWNT crest rendered in JS'
-          title='Louvre Redesign'
+          title='USWNT Crest'
           url='/development/zdog-uswnt'
           />
         </Row>
