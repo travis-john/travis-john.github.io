@@ -1,6 +1,7 @@
 import React from 'react';
 import SecondaryNav from '../components/SecondaryNav';
 import CaseStudy from '../components/CaseStudy';
+import ScrollTop from '../components/ScrollTop';
 import Footer from '../components/Footer';
 
 const OlbConcept = () => {

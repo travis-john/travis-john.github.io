@@ -3,6 +3,7 @@ import { Container, Row } from 'reactstrap';
 import SecondaryNav from '../components/SecondaryNav';
 import CategoryMasthead from '../components/CategoryMasthead';
 import PortfolioItem from '../components/PortfolioItem';
+import ScrollTop from '../components/ScrollTop';
 import Footer from '../components/Footer';
 import Heatmap from '../svg/heatmap.svg';
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';

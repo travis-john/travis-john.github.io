@@ -1,6 +1,7 @@
 import React from 'react';
 import SecondaryNav from '../components/SecondaryNav';
 import DevStudy from '../components/DevStudy';
+import ScrollTop from '../components/ScrollTop';
 import Footer from '../components/Footer';
 
 const USWNT = () => {
