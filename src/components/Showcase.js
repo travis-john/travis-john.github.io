@@ -56,7 +56,7 @@ class Showcase extends Component {
             <CardBody>
             <CardTitle><h3>Star Wars Crawls</h3></CardTitle>
             <CardSubtitle>Feb 2020</CardSubtitle>
-            <CardText>Using JQery AJAX calls, CSS Animations, and the free SWAPI to animate the opening crawls from all Star Wars movies</CardText>
+            <CardText>Using JQuery AJAX calls, CSS Animations, and the free SWAPI to animate the opening crawls from all Star Wars movies</CardText>
             <CardLink href='https://travis-john.github.io/swapi-movie-crawl-animation' target='_blank'>View application<FontAwesomeIcon className='ml-2' icon={faExternalLinkAlt} /><span className='sr-only'>opens in new tab</span></CardLink>
             </CardBody>
             <CardFooter>
