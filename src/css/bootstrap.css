@@ -7297,7 +7297,8 @@ a.text-white:hover, a.text-white:focus {
   align-items: center;
   border: 1px solid #250F8A;
   border-radius: .25rem;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  cursor: pointer; }
   .scrolltop--container .scroll-top--icon {
     display: block; }
 

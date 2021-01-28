@@ -26,9 +26,9 @@ const ScrollTop = (props) => {
 
   return (
     <>
-      <div className={ (scrolling===true )? (`scrolltop--container` ): (`scrolltop--container d-none`)}>
+      <Link to="page-top" spy={true} smooth={true} duration={800} className={ (scrolling===true )? (`scrolltop--container` ): (`scrolltop--container d-none`)}>
         <FontAwesomeIcon className='fas scroll-top--icon' icon={faArrowUp} />
-      </div>
+      </Link>
     </>
   )
 
