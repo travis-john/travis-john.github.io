@@ -34,16 +34,6 @@ const Design = (props) => {
           <PortfolioItem
           md='4'
           sm='12'
-          image='/assets/images/design/compass-app.png'
-          alt='cropped screenshot of compass app skin'
-          title='Compass App Skin'
-          url='https://dribbble.com/shots/6120425-Compass-App-Skin'
-          target='_blank'
-          icon={faExternalLinkAlt}
-          sr='opens in new tab' />
-          <PortfolioItem
-          md='4'
-          sm='12'
           image='/assets/images/design/product_card.png'
           alt='cropped screenshot of product card concept'
           title='Product Card'
@@ -52,12 +42,36 @@ const Design = (props) => {
           icon={faExternalLinkAlt}
           sr='opens in new tab' />
           <PortfolioItem
-          md='12'
+          md='4'
+          sm='12'
+          image='/assets/images/design/card-component-card.jpg'
+          alt='screenshot of half-width card component'
+          title='Card Component'
+          url='/design/card-component'
+          />
+          <PortfolioItem
+          md='4'
           sm='12'
           image='/assets/images/design/media-truist-card.png'
           alt='cropped screenshot of media.truist.com'
           title='media.truist.com'
           url='/design/media-truist'
+          />
+          <PortfolioItem
+          md='4'
+          sm='12'
+          image='/assets/images/design/use-case-page-card.jpg'
+          alt='cropped screenshot of use case page'
+          title='Cisco.com pages'
+          url='/design/dlj-section'
+          />
+          <PortfolioItem
+          md='4'
+          sm='12'
+          image='/assets/images/design/email-template-card.jpg'
+          alt='cropped screenshot of email template example'
+          title='Email Template Library'
+          url='/design/email-template-library'
           />
           <PortfolioItem
           md='6'
