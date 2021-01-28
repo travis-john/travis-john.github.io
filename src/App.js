@@ -45,6 +45,9 @@ const App = (props) => {
           <Route exact path='/design/card-component'>
             <CardComponent />
           </Route>
+          <Route exact path='/design/email-template-library'>
+            <CardComponent />
+          </Route>
           <Route exact path='/design/louvre-redesign'>
             <LouvreRedesign />
           </Route>
