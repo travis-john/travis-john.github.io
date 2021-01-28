@@ -44,7 +44,7 @@ const Design = (props) => {
           <PortfolioItem
           md='4'
           sm='12'
-          image='/assets/images/design/card-component-card.jpg'
+          image='/assets/images/design/card-component.jpg'
           alt='screenshot of half-width card component'
           title='Card Component'
           url='/design/card-component'

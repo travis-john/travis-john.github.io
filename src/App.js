@@ -6,6 +6,7 @@ import Development from './pages/Development';
 import MediaTruist from './pages/MediaTruist';
 import OlbConcept from './pages/OlbConcept';
 import DLJSection from './pages/DLJSection';
+import CardComponent from './pages/CardComponent';
 import LouvreRedesign from './pages/LouvreRedesign';
 import GotChart from './pages/GotChart';
 import FalconToggle from './pages/FalconToggle';
@@ -40,6 +41,9 @@ const App = (props) => {
           </Route>
           <Route exact path='/design/dlj-section'>
             <DLJSection />
+          </Route>
+          <Route exact path='/design/card-component'>
+            <CardComponent />
           </Route>
           <Route exact path='/design/louvre-redesign'>
             <LouvreRedesign />
