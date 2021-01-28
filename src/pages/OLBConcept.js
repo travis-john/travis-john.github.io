@@ -17,6 +17,7 @@ const OlbConcept = () => {
     img = '/assets/images/design/olb-concept-full.jpg'
     alt = 'screenshot of concept layout for Online Banking page'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

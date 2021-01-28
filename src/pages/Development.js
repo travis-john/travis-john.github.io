@@ -72,6 +72,7 @@ const Development = (props) => {
         </Row>
       </Container>
       </div>
+      <ScrollTop />
       <Footer />
     </>
   )

@@ -22,6 +22,7 @@ const MovieBrowser = () => {
     alt='screenshot of movieBrowser homepage'
     link='https://whispering-dawn-54949.herokuapp.com/'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

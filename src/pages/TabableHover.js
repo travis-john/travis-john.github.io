@@ -18,6 +18,7 @@ const MovieBrowser = () => {
     process = 'An idea I had and decided to make a reality. Hover effects are not generally considered accessible'
     hash='GbWNma'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

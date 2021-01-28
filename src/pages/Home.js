@@ -14,7 +14,6 @@ const Home = () => {
     <Masthead />
     <Showcase />
     <Contact />
-    <ScrollTop />
     <Footer />
     </>
   )

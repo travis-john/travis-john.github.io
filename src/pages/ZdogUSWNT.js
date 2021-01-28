@@ -18,6 +18,7 @@ const USWNT = () => {
     process = "Zdog is a new Javascript library that renders pseudo-3D elements onto a canvas. I experimented with it's semantic class structure to combine shapes and paths to recreate a 3D rendering of the United States Women's National Football Team"
     hash='agbMNx'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

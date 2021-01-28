@@ -18,6 +18,7 @@ const GotChart = (props) => {
     process = 'I used the ratings from IMDB for all Game of Thrones episodes to create a chart in which the user can compare and contrast the quality of the the show over time.'
     hash = 'dERzbj'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

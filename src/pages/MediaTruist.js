@@ -17,6 +17,7 @@ const MediaTruist = () => {
     img = '/assets/images/design/media-truist-full.png'
     alt = 'screenshot of initial media.truist.design'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

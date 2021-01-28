@@ -18,6 +18,7 @@ const FalconToggle = (props) => {
     process = 'Using SCSS and Jquery, I created a checkbox field that generates random stars and star positions upon page load. Upon clicking the checkbox, the checkbox changes state to recreate the iconic jump to hyperspace from Star Wars.'
     hash = 'dEqqzq'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

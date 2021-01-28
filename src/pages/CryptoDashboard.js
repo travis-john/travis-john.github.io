@@ -22,6 +22,7 @@ const CryptoDashboard = () => {
     alt='screenshot of cryptocurrency dashboard'
     link='https://travis-john.github.io/dolla-dolla-bills'
     />
+    <ScrollTop />
     <Footer />
     </>
   )

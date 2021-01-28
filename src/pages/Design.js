@@ -78,6 +78,7 @@ const Design = (props) => {
         </Row>
       </Container>
       </div>
+      <ScrollTop />
       <Footer />
     </>
   )

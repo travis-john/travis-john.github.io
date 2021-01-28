@@ -20,6 +20,7 @@ const LouvreRedesign = () => {
     img = '/assets/images/design/louvre-redesign.png'
     alt = 'screenshot of louvre redesign homepage'
     />
+    <ScrollTop />
     <Footer />
     </>
   )
