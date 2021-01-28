@@ -11,6 +11,7 @@ const Home = () => {
   return(
     <>
     <MainNav />
+    <ScrollTop />
     <Masthead />
     <Showcase />
     <Contact />

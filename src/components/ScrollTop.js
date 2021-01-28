@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowUp} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll";
@@ -7,26 +7,24 @@ const ScrollTop = (props) => {
 
   useEffect(()=>{
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', checkScrollTop);
 
   });
 
-  let [scrolling, updatehandlescroll] = useState(false);
+  let [showScroll, setShowScroll] = useState(false);
 
-  const handleScroll = (props) => {
+  const checkScrollTop = (props) => {
 
-  window.onscroll = function() {
-      if(window.pageYOffset === 0) {
-        updatehandlescroll(scrolling=false)
-      } else {
-        updatehandlescroll(scrolling=true);
-      }
-    };
-  }
+  if (!showScroll && window.pageYOffset >= 1){
+    setShowScroll(true);
+    } else if (showScroll && window.pageYOffset < 1){
+      setShowScroll(false)
+    }
+  };
 
   return (
     <>
-      <Link to="page-top" spy={true} smooth={true} duration={800} className={ (scrolling===true )? (`scrolltop--container` ): (`scrolltop--container d-none`)}>
+      <Link to="page-top" spy={true} smooth={true} duration={800} className={ (showScroll===true )? (`scrolltop--container` ): (`scrolltop--container d-none`)}>
         <FontAwesomeIcon className='fas scroll-top--icon' icon={faArrowUp} />
       </Link>
     </>
