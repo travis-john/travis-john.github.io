@@ -7285,6 +7285,22 @@ a.text-white:hover, a.text-white:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.scrolltop--container {
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  z-index: 3;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #250F8A;
+  border-radius: .25rem;
+  background: #f2f2f2; }
+  .scrolltop--container .scroll-top--icon {
+    display: block; }
+
 .bg-showcase {
   background: #d3cfe8;
   background: linear-gradient(132deg, #d3cfe8 0%, #6657ad 100%); }
