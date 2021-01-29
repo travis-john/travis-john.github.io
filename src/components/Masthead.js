@@ -9,33 +9,35 @@ import { faDownload  } from '@fortawesome/free-solid-svg-icons';
 const Masthead = (props) => {
     return (
       <Container className='p-3'>
-      <Row className='mb-3 mb-xs-2'>
-      <Col className='d-flex flex-column flex-wrap justify-content-center' xs={{order: 2}} sm={{size: 12, order: 2}} md={{size: 4, order: 1}}>
-        <h1>Hello!</h1>
-        <p className='lead'>I'm Travis - A UX/UI Designer who codes!</p>
-        <ul className='list-inline mb-0'>
-          <li className='list-inline-item mb-2'>
-            <a className='btn btn-outline-primary text-center rounded-circle' href='https://codepen.io/travis_john'>
-              <FontAwesomeIcon className='fab' icon={faCodepen} />
-            </a>
-          </li>
-          <li className='list-inline-item mb-2'>
-            <a className='btn btn-outline-primary text-center rounded-circle' href='https://dribbble.com/travis_john'>
-              <FontAwesomeIcon className='fab' icon={faDribbble} />
-            </a>
-          </li>
-          <li className='list-inline-item mb-2'>
-            <a className='btn btn-outline-primary text-center rounded-circle' href='https://github.com/travis-john'>
-              <FontAwesomeIcon className='fab' icon={faGithub} />
-            </a>
-          </li>
-          <li className='list-inline-item mb-2'>
-            <a className='btn btn-outline-primary text-center rounded-circle' href='https://www.linkedin.com/in/travis-john-2377962a/'>
-              <FontAwesomeIcon className='fab' icon={faLinkedin} />
-            </a>
-          </li>
-        </ul>
-        <a className='btn btn-primary btn-lg text-white' href='/assets/resume/travis-john-resume-2021-web.pdf' target='_blank'><FontAwesomeIcon className='fa mr-2' icon={faDownload} />Download résumé</a>
+      <Row className='mb-3'>
+      <Col className='d-flex flex-column flex-wrap justify-content-center p-2 masthead-card-column' xs={{order: 2}} sm={{size: 12, order: 2}} md={{size: 4, order: 1}}>
+        <div className='masthead-card'>
+          <h1>Hello!</h1>
+          <p className='lead'>I'm Travis - A UX/UI Designer who codes!</p>
+          <ul className='list-inline mb-0'>
+            <li className='list-inline-item mb-2'>
+              <a className='btn btn-outline-primary text-center rounded-circle' href='https://codepen.io/travis_john'>
+                <FontAwesomeIcon className='fab' icon={faCodepen} />
+              </a>
+            </li>
+            <li className='list-inline-item mb-2'>
+              <a className='btn btn-outline-primary text-center rounded-circle' href='https://dribbble.com/travis_john'>
+                <FontAwesomeIcon className='fab' icon={faDribbble} />
+              </a>
+            </li>
+            <li className='list-inline-item mb-2'>
+              <a className='btn btn-outline-primary text-center rounded-circle' href='https://github.com/travis-john'>
+                <FontAwesomeIcon className='fab' icon={faGithub} />
+              </a>
+            </li>
+            <li className='list-inline-item mb-2'>
+              <a className='btn btn-outline-primary text-center rounded-circle' href='https://www.linkedin.com/in/travis-john-2377962a/'>
+                <FontAwesomeIcon className='fab' icon={faLinkedin} />
+              </a>
+            </li>
+          </ul>
+          <a className='btn btn-primary btn-lg text-white' href='/assets/resume/travis-john-resume-2021-web.pdf' target='_blank'><FontAwesomeIcon className='fa mr-2' icon={faDownload} />Download résumé</a>
+        </div>
       </Col>
       <Col xs={{order: 1}} sm={{size: 12, order: 1 }} md={{size: 8, order: 2}}>
         <ReactSVG src={SVG}  beforeInjection={svg => {svg.setAttribute('style', 'width: 100%')}} />
