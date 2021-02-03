@@ -13,7 +13,7 @@ const EmailTemplateLibrary = () => {
     hasDownload = 'true'
     link = '/assets/images/design/email-template-library.sketch'
     headline = 'Email Template Library'
-    lead = 'A library of standard and uniquely-branded email templates'
+    lead = 'A library of standard and uniquely-branded email templates. * The downloadable file is a recreation based on memory and built with publicly available assets.'
     users = 'Any user searching for information on Cisco.com'
     role = 'Designer and developer'
     process = "Customer interviews revealed the fact that our intended recipients of Cisco CX emails were, in large part, not opening them at all. Even though these emails contained very important information regarding their Cisco product. This came from the perception that all emails from Cisco were marketing emails and, therefore, not relevant to their immediate needs. We set about the task of making emails not appear as marketing emails. I came up with a design library where we relied on old design principles of typographical hierarchy, evenly spaced modules, 1 primary CTA, and underlined hyperlinks. In addition to the establishing the general design principles, I wrote the initial markup for the emails that was implemented in Salesforce Marketing Cloud. The downloadable file is a recreation based on memory and built with publicly available assets."
