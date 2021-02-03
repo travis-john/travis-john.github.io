@@ -19,6 +19,7 @@ const CaseStudy = (props) => {
         <h2>Process</h2>
         <p className='py-3'>{props.process}</p>
         <a className='btn btn-primary btn-lg text-white' href={props.link}><FontAwesomeIcon className='fa mr-2' icon={faDownload} />Download prototype</a>
+        <p className='disclaimer mt-2'>{props.disclaimer}</p>
       </Col>
       <Col className='pt-5' sm="1" md="8">
         <img className='img-fluid mb-3' src={props.img} alt={props.alt} />

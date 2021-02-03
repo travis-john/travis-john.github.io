@@ -7227,6 +7227,9 @@ a.text-white:hover, a.text-white:focus {
 .text-shadow {
   text-shadow: 0px 1px 4px #000; }
 
+.disclaimer {
+  font-size: 0.875rem; }
+
 .visible {
   visibility: visible !important; }
 
