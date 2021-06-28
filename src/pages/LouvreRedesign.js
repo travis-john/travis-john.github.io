@@ -12,7 +12,7 @@ const LouvreRedesign = () => {
     <CaseStudy
     hasDownload = 'true'
     link = '/assets/images/design/louvre-redesign.sketch'
-    headline = 'Louvre Redesign'
+    headline = 'Louvre Redesign Wireframe'
     lead = 'Wireframing and flow exercise'
     users = 'All users searching for art in the Louvre'
     role = 'I completed this low-fidelity prototype as an exercise in wireframing and prototyping as well as getting more familiar with Sketch capabilities'

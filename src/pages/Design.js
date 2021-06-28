@@ -86,7 +86,7 @@ const Design = (props) => {
           sm='12'
           image='/assets/images/design/louvre-redesign.png'
           alt='cropped screenshot of louvre redesign'
-          title='Louvre Redesign'
+          title='Louvre Redesign Wireframe'
           url='/design/louvre-redesign'
           />
         </Row>
