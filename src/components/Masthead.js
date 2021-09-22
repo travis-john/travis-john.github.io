@@ -48,7 +48,7 @@ const Masthead = (props) => {
             <Card inverse color="primary" className='mb-3 rounded-2'>
               <CardBody>
                 <CardTitle>Design Projects</CardTitle>
-                <CardText>I have 3+ years as a professional UX/UI Designer. Click the link below to view design projects</CardText>
+                <CardText>I have 4+ years as a professional UX/UI Designer. Click the link below to view design projects</CardText>
                 <Button outline color='white' block href='/design'>View design projects</Button>
               </CardBody>
             </Card>
