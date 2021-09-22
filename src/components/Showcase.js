@@ -26,7 +26,7 @@ class Showcase extends Component {
     return (
       <div className='bg-showcase p-5' id='showcase'>
       <Container>
-        <h2 className='text-center text-white text-shadow'>Noteable Projects</h2>
+        <h2 className='text-center text-white text-shadow'>Notable Projects</h2>
         <Row className='p-2'>
           <CardDeck>
             <Card className='mb-3 rounded-2 border-left-primary'>
@@ -58,6 +58,9 @@ class Showcase extends Component {
             <CardText>Page templages and experience for DLJ-owned pages on Cisco.com</CardText>
             <CardLink href='/design/dlj-section'>More details</CardLink>
             </CardBody>
+            <CardFooter>
+              <CardLink className='card-footer-link' href='/design/dlj-section'> <FontAwesomeIcon className='ml-auto' icon={faExternalLinkAlt} /> <span className='sr-only'>opens in new tab></span> </CardLink>
+            </CardFooter>
           </Card>
           </CardDeck>
           <CardDeck>
