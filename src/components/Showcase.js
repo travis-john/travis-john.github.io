@@ -59,7 +59,7 @@ class Showcase extends Component {
             <CardLink href='/design/dlj-section'>More details</CardLink>
             </CardBody>
             <CardFooter>
-              <CardLink className='card-footer-link' href='/design/dlj-section'> <FontAwesomeIcon className='ml-auto' icon={faExternalLinkAlt} /> <span className='sr-only'>opens in new tab></span> </CardLink>
+              <CardLink className='card-footer-link' href='https://www.cisco.com/c/m/en_us/products/cloud-systems-management/dna-center/getting-started.html'> <FontAwesomeIcon className='ml-auto' icon={faExternalLinkAlt} /> <span className='sr-only'>opens in new tab></span> </CardLink>
             </CardFooter>
           </Card>
           </CardDeck>
